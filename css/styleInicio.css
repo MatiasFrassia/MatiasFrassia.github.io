@@ -1,0 +1,179 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+.img-left{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px; 
+  height: auto; 
+}
+
+.img-right{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px; 
+  height: auto; 
+}
+
+@font-face {
+  font-family: "Cinzel-Black";
+  src: url('Tipografia/Cinzel-Black.ttf');
+}
+
+h1{
+    font-family: "Cinzel-Black";
+    font-size: 72px;
+    color: #d60b0b;
+    text-shadow: 2px 2px 4px #000;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border: 4px solid rgb(102, 15, 3);
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgb(248, 245, 244);
+  }
+  
+nav{
+  display:flex;
+  justify-content:center;
+  border: solid 1px;
+  height: 40px;
+  
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+    
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+    
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav li a:hover {
+    color: black;
+    background-color: #e20c0c;
+    border: 2px solid black;
+    padding: 10px;
+    height: 40px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d60b0b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #b80808;
+  }
+  
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+#contenido {
+    animation: fadeIn 4s ease-out;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    overflow: scroll;
+    width: 100%;
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    outline: 1px solid red;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+  
+
+.welcome-text{
+  font-family:"Cinzel-Black";
+  text-align: center;
+  font-size: 25px;
+}
+
+
+footer {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos adicionales */
+
+a {
+    color: red;
+}
+
+a:hover {
+    color: white;
+}
+
+footer {
+    color: silver;
+}
