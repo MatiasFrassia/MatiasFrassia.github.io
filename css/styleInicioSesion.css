@@ -36,11 +36,21 @@ body {
 }
 
 .input-box{
-  margin: 30px auto;
+  margin: 25px auto;
 }
 
 .forget{
   margin: 10px auto;
+}
+
+a{
+  margin: auto 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgba(203, 143, 143, 0.355);
+  border-radius: 5px;
+  padding: 3px;
+  font-size:18px;
 }
 
 
