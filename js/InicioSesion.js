@@ -112,7 +112,6 @@ function login() {
         email: emailLogin,
         password: passwordLogin
     };
-    
     let loginAccess = false;
     for(let usuario of usuarios){
         if((usuario.email == userDataLogin.email) && (usuario.password == userDataLogin.password)){
