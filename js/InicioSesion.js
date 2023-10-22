@@ -32,14 +32,9 @@ function mostrarFormularioRegistro() {
                 <label>Acepto Terminos y Condiciones</label>
             </div>
             <button type="submit" class="btn" onclick="registro()">Crear cuenta</button>
-            <button type="button" id="volverLoginButton">Volver al inicio de sesión</button>
+            <button type="button" onclick="mostrarFormularioInicioSesion()">Volver al inicio de sesión</button>
         </form>
     `;
-
-    const volverLoginButton = document.getElementById("volverLoginButton");
-    volverLoginButton.addEventListener("click", () => {
-        mostrarFormularioInicioSesion();
-    });
 }
 
 function mostrarFormularioInicioSesion() {
@@ -64,10 +59,6 @@ function mostrarFormularioInicioSesion() {
             </div>
          </form>
     `;
-    const registroButton = document.getElementById("registroButton");
-    registroButton.addEventListener("click", () => {
-        mostrarFormularioRegistro();
-    });
 }
 class Usuario{
     constructor(nombre, apellido, username, password, email, fechaNacimiento){
