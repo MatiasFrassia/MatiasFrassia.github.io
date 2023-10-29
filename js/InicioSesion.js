@@ -31,7 +31,7 @@ function mostrarFormularioRegistro() {
                 <input type="checkbox" required>
                 <label>Acepto Terminos y Condiciones</label>
             </div>
-            <button type="submit" class="btn" onclick="registro()">Crear cuenta</button>
+            <button type="button" class="btn" onclick="registro()">Crear cuenta</button>
             <button type="button" onclick="mostrarFormularioInicioSesion()">Volver al inicio de sesión</button>
         </form>
     `;
@@ -52,7 +52,7 @@ function mostrarFormularioInicioSesion() {
                 <label for=""><input type="checkbox">Recuerdame</label>
                 <a href="#">Olvide mi Contraseña</a>
             </div>
-                <button type="submit" class="btn" onclick="login()">Ingresar</button>
+                <button type="button" class="btn" onclick="login()">Ingresar</button>
             <div class="login-register">
                 <p>No tienes una cuenta? <button id="registroButton" onclick="mostrarFormularioRegistro()">Registrarse</button></p>
             </div>
@@ -133,7 +133,7 @@ function registro() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    const userData = new Usuario(nombre, apellido, username, fechaNacimiento, email, password);
+    const userData = new Usuario(nombre, apellido, username, password, email, fechaNacimiento);
     let usernameNoExistente = true;
     let emailNoExistente = true;
     for(let usuario of usuarios){
