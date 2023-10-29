@@ -36,7 +36,6 @@ function mostrarFormularioRegistro() {
         </form>
     `;
 }
-
 function mostrarFormularioInicioSesion() {
     contenido.innerHTML = `
          <form id="loginForm">
